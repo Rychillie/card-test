@@ -21,12 +21,22 @@ header {
   width: 100%;
   display: inline-block;
   position: relative;
-  height: 15vh;
+  max-height: 15vh;
+
+  h1 {
+    font-size: 32px;
+    line-height: 36px;
+    font-family: $lato;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin: 35px 45px 15px;
+  }
 }
 
 main {
+  width: 100%;
   position: relative;
-  display: block;
+  display: inline-block;
   height: 70vh;
 
   .container {
@@ -145,11 +155,11 @@ main {
         }
 
         &:first-child {
-          margin-left: 25px;
+          margin-left: 45px;
         }
 
         &:last-child {
-          margin-right: 25px;
+          margin-right: 45px;
         }
 
         &:hover {
@@ -175,5 +185,96 @@ main {
 
 
 footer {
-  height: 15vh;
+  width: 100%;
+  max-height: 15vh;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+
+  .navbar {
+    width: 100%;
+    display: flex;
+    position: absolute;
+    justify-content: space-around;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+    a {
+      text-decoration: none;
+      text-transform: uppercase;
+      display: inline-block;
+      padding: 20px 35px;
+      font-family: $lato;
+      font-weight: 400;
+      line-height: 12px;
+      font-size: 14px;
+      margin: 15px 0;
+      color: black;
+      opacity: 1;
+
+      &:hover {
+        opacity: .8;
+      }
+    }
+  }
+  /*Tablet*/
+  @media only screen and (min-width: 600px) {
+    .navbar {
+      width: 100%;
+      display: inline-block;
+      position: absolute;
+      bottom: 20px;
+      right: 45px;
+      left: 45px;
+
+      a {
+        text-decoration: none;
+        text-transform: uppercase;
+        display: inline-block;
+        padding: 20px 35px;
+        font-family: $lato;
+        font-weight: 400;
+        line-height: 22px;
+        font-size: 24px;
+        color: black;
+        opacity: 1;
+
+        &:hover {
+          opacity: .8;
+        }
+      }
+    }
+  }
+
+  /*Computador Grande*/
+  @media only screen and (min-width: 1200px) {
+    .navbar {
+      width: 100%;
+      display: inline-block;
+      position: absolute;
+      bottom: 20px;
+      right: 45px;
+      left: 45px;
+
+      a {
+        text-decoration: none;
+        text-transform: uppercase;
+        display: inline-block;
+        padding: 20px 35px;
+        font-family: $lato;
+        font-weight: 400;
+        line-height: 28px;
+        font-size: 26px;
+        color: black;
+        opacity: 1;
+
+        &:hover {
+          opacity: .8;
+        }
+      }
+    }
+  }
 }

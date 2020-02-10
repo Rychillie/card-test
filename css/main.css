@@ -19,12 +19,22 @@ header {
   width: 100%;
   display: inline-block;
   position: relative;
-  height: 15vh;
+  max-height: 15vh;
+}
+
+header h1 {
+  font-size: 32px;
+  line-height: 36px;
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin: 35px 45px 15px;
 }
 
 main {
+  width: 100%;
   position: relative;
-  display: block;
+  display: inline-block;
   height: 70vh;
 }
 
@@ -157,11 +167,11 @@ main .container .page-content .card::after {
 }
 
 main .container .page-content .card:first-child {
-  margin-left: 25px;
+  margin-left: 45px;
 }
 
 main .container .page-content .card:last-child {
-  margin-right: 25px;
+  margin-right: 45px;
 }
 
 main .container .page-content .card:hover img {
@@ -179,6 +189,97 @@ main .container .page-content .card:hover::after {
 }
 
 footer {
-  height: 15vh;
+  width: 100%;
+  max-height: 15vh;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  /*Tablet*/
+  /*Computador Grande*/
+}
+
+footer .navbar {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+footer .navbar a {
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 20px 35px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 12px;
+  font-size: 14px;
+  margin: 15px 0;
+  color: black;
+  opacity: 1;
+}
+
+footer .navbar a:hover {
+  opacity: .8;
+}
+
+@media only screen and (min-width: 600px) {
+  footer .navbar {
+    width: 100%;
+    display: inline-block;
+    position: absolute;
+    bottom: 20px;
+    right: 45px;
+    left: 45px;
+  }
+  footer .navbar a {
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 20px 35px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    line-height: 22px;
+    font-size: 24px;
+    color: black;
+    opacity: 1;
+  }
+  footer .navbar a:hover {
+    opacity: .8;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  footer .navbar {
+    width: 100%;
+    display: inline-block;
+    position: absolute;
+    bottom: 20px;
+    right: 45px;
+    left: 45px;
+  }
+  footer .navbar a {
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 20px 35px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    line-height: 28px;
+    font-size: 26px;
+    color: black;
+    opacity: 1;
+  }
+  footer .navbar a:hover {
+    opacity: .8;
+  }
 }
 /*# sourceMappingURL=main.css.map */
