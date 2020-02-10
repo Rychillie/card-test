@@ -21,7 +21,7 @@ header {
   height: 100%;
   display: inline-block;
   position: relative;
-  max-height: 15vh;
+  max-height: 10vh;
 }
 
 header h1 {
@@ -204,7 +204,7 @@ footer {
   height: 100%;
   display: inline-block;
   position: absolute;
-  max-height: 15vh;
+  max-height: 20vh;
   bottom: 0;
   right: 0;
   left: 0;
