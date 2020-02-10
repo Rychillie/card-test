@@ -30,7 +30,12 @@ header h1 {
   font-family: "Lato", sans-serif;
   font-weight: 900;
   text-transform: uppercase;
-  margin: 25px 45px 15px;
+  position: absolute;
+  top: 50%;
+  bottom: 0;
+  left: 45px;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
 }
 
 main {

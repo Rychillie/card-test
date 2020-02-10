@@ -31,7 +31,11 @@ header {
     font-family: $lato;
     font-weight: 900;
     text-transform: uppercase;
-    margin: 25px 45px 15px;
+    position: absolute;
+    top: 50%;
+    bottom: 0;
+    left: 45px;
+    transform: translate(0, -50%);
   }
 }
 
