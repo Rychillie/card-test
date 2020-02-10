@@ -26,15 +26,18 @@ header {
   max-height: 15vh;
 
   h1 {
-    font-size: 32px;
-    line-height: 36px;
-    font-family: $lato;
-    font-weight: 900;
-    text-transform: uppercase;
-    position: absolute;
     top: 50%;
     bottom: 0;
     left: 45px;
+    margin: 0;
+    padding: 0;
+    height: 32px;
+    font-size: 32px;
+    line-height: 32px;
+    font-family: $lato;
+    font-weight: 900;
+    position: absolute;
+    text-transform: uppercase;
     transform: translate(0, -50%);
   }
 }
