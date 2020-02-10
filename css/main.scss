@@ -51,20 +51,23 @@ main {
 
   .container {
     display: block;
-    overflow-y:scroll;
-    overflow-x:hidden;
-    transform: rotate(270deg) translateX(-100%);
+    overflow-y: scroll;
+    overflow-x: hidden;
+    transform: rotate(270deg) translateX(-50%);
     transform-origin: top left;
     position: absolute;
-    width: 70vh;
+    max-width: 70vh;
     height: 100vw;
+    width: 100%;
+    top: 50%;
 
     .page-content {
       position: absolute;
       transform: rotate(90deg) translate(0, -50%);
       transform-origin: top left;
-      white-space:nowrap;
-      height: 70vh;
+      white-space: nowrap;
+      max-height: 70vh;
+      height: 100%;
       width: 100vh;
       left: 50%;
       top: 0;
@@ -74,13 +77,14 @@ main {
         transform: translate(0, -50%);
         display: inline-block;
         width: 260px;
-        height: 480px;
+        height: 100%;
         padding: 1rem;
         position: relative;
         overflow: hidden;
         margin-right: 15px;
         text-align: center;
         border-radius: 5px;
+        max-height: 480px;
 
         img {
           border-radius: 5px;
