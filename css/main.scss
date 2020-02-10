@@ -1,0 +1,167 @@
+* {
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar,
+::-webkit-scrollbar-button {
+  display: none;
+}
+
+body, html{
+  margin: 0!important;
+  padding: 0!important;
+}
+
+header {
+  width: 100%;
+  display: inline-block;
+  position: relative;
+  height: 15vh;
+}
+
+main {
+  position: relative;
+  display: block;
+  height: 70vh;
+
+  .container {
+    display: block;
+    overflow-y:scroll;
+    overflow-x:hidden;
+    transform: rotate(270deg) translateX(-100%);
+    transform-origin: top left;
+    position: absolute;
+    width: 70vh;
+    height: 100vw;
+
+    .page-content {
+      position: absolute;
+      transform: rotate(90deg) translate(0, -50%);
+      transform-origin: top left;
+      white-space:nowrap;
+      height: 70vh;
+      width: 100vh;
+      left: 50%;
+      top: 0;
+
+      .card {
+        top: 50%;
+        transform: translate(0, -50%);
+        display: inline-block;
+        width: 260px;
+        height: 480px;
+        padding: 1rem;
+        position: relative;
+        overflow: hidden;
+        margin-right: 15px;
+        text-align: center;
+        border-radius: 5px;
+
+        img {
+          border-radius: 5px;
+          position: absolute;
+          transition: transform .2s;
+          transform-origin: 0 0;
+          min-width: 100%;
+          height: auto;
+          left: 50%;
+          top: 50%;
+          display: block;
+          transform: translate(-50%, -50%);
+          min-width: 240px;
+          min-height: 360px;
+          z-index: 1;
+        }
+
+        .content {
+          z-index: 5;
+          position: relative;
+          display: block;
+          width: 100%;
+          padding: 1rem;
+          transform: translateY(calc(70vh - 100px));
+          transition: all .2s;
+
+          h2, p, button {
+            color: white;
+            display: block;
+            position: relative;
+          }
+
+          h2 {
+            font-size: 1.3rem;
+            font-weight: 800;
+            line-height: 1.2;
+          }
+
+          p {
+            display: block;
+            font-size: 1.1rem;
+            font-style: italic;
+            line-height: 1.1rem;
+            word-wrap: break-word;
+            white-space: initial;
+          }
+
+          button {
+            cursor: pointer;
+            margin: 0 auto;
+            padding: 0.75rem 1.5rem;
+            font-size: 0.65rem;
+            font-weight: bold;
+            letter-spacing: 0.025rem;
+            text-transform: uppercase;
+            color: #fff;
+            background-color: #000;
+            border: none;
+          }
+        }
+
+        &::after {
+          content: '';
+          z-index: 1;
+          display: block;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 200%;
+          background: -moz-linear-gradient(top, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0.15) 1%, rgba(0,0,0,0.65) 100%);
+          background: -webkit-linear-gradient(top, rgba(0,0,0,0.15) 0%,rgba(0,0,0,0.15) 1%,rgba(0,0,0,0.65) 100%);
+          background: linear-gradient(to bottom, rgba(0,0,0,0.15) 0%,rgba(0,0,0,0.15) 1%,rgba(0,0,0,0.65) 100%);
+          -webkit-transform: translateY(0);
+          transform: translateY(0);
+        }
+
+        &:first-child {
+          margin-left: 25px;
+        }
+
+        &:last-child {
+          margin-right: 25px;
+        }
+
+        &:hover {
+          img {
+            transform: scale(1.2) translate(-50%, -50%);
+          }
+
+          .content {
+            -webkit-transform: translateY(30vh);
+            transform: translateY(30vh);
+          }
+
+          &::after{
+            -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+          }
+        }
+      }
+    }
+  }
+}
+
+
+footer {
+  height: 15vh;
+}
