@@ -91,13 +91,13 @@ main .container .page-content .card img {
 }
 
 main .container .page-content .card .content {
+  left: 0;
+  bottom: -170px;
   z-index: 5;
-  position: relative;
+  position: absolute;
   display: block;
   width: 100%;
   padding: 1rem;
-  -webkit-transform: translateY(calc(70vh - 100px));
-          transform: translateY(calc(70vh - 100px));
   -webkit-transition: all .2s;
   transition: all .2s;
 }
@@ -109,27 +109,32 @@ main .container .page-content .card .content h2, main .container .page-content .
 }
 
 main .container .page-content .card .content h2 {
-  font-size: 1.3rem;
-  font-weight: 800;
-  line-height: 1.2;
+  margin: 10px 0 0;
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-size: 22px;
+  line-height: 22px;
+  min-height: 66px;
 }
 
 main .container .page-content .card .content p {
-  display: block;
-  font-size: 1.1rem;
-  font-style: italic;
-  line-height: 1.1rem;
+  margin: 15px 0 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
   word-wrap: break-word;
   white-space: initial;
+  font-size: 15px;
+  line-height: 16px;
 }
 
 main .container .page-content .card .content button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
   cursor: pointer;
-  margin: 0 auto;
-  padding: 0.75rem 1.5rem;
-  font-size: 0.65rem;
+  margin: 15px auto;
+  padding: 15px 35px;
+  font-size: 12px;
   font-weight: bold;
-  letter-spacing: 0.025rem;
   text-transform: uppercase;
   color: #fff;
   background-color: #000;
@@ -165,8 +170,7 @@ main .container .page-content .card:hover img {
 }
 
 main .container .page-content .card:hover .content {
-  -webkit-transform: translateY(30vh);
-  transform: translateY(30vh);
+  bottom: 0;
 }
 
 main .container .page-content .card:hover::after {
