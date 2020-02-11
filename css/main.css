@@ -46,7 +46,7 @@ main {
   height: 100%;
   position: relative;
   display: inline-block;
-  max-height: 70vh;
+  max-height: 85vh;
 }
 
 main .container {
@@ -58,7 +58,7 @@ main .container {
   -webkit-transform-origin: top left;
           transform-origin: top left;
   position: absolute;
-  max-width: 70vh;
+  max-width: 100vh;
   height: 100vw;
   width: 100%;
   top: 50%;
@@ -71,7 +71,7 @@ main .container .page-content {
   -webkit-transform-origin: top left;
           transform-origin: top left;
   white-space: nowrap;
-  max-height: 70vh;
+  max-height: 100vh;
   height: 100%;
   width: 100vh;
   left: 50%;
@@ -208,7 +208,7 @@ footer {
   height: 100%;
   display: inline-block;
   position: absolute;
-  max-height: 20vh;
+  max-height: 15vh;
   bottom: 0;
   right: 0;
   left: 0;
