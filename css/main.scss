@@ -57,6 +57,7 @@ main {
     transform-origin: top left;
     position: absolute;
     max-width: 100vh;
+    min-width: 480px;
     height: 100vw;
     width: 100%;
     top: 50%;
@@ -67,6 +68,7 @@ main {
       transform-origin: top left;
       white-space: nowrap;
       max-height: 100vh;
+      min-height: 480px;
       height: 100%;
       width: 100vh;
       left: 50%;
