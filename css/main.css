@@ -47,6 +47,7 @@ main {
   position: relative;
   display: inline-block;
   max-height: 75vh;
+  min-height: 480px;
 }
 
 main .container {
