@@ -46,7 +46,7 @@ main {
   height: 100%;
   position: relative;
   display: inline-block;
-  max-height: 85vh;
+  max-height: 75vh;
 }
 
 main .container {
@@ -58,7 +58,7 @@ main .container {
   -webkit-transform-origin: top left;
           transform-origin: top left;
   position: absolute;
-  max-width: 100vh;
+  max-width: 70vh;
   height: 100vw;
   width: 100%;
   top: 50%;
@@ -71,7 +71,7 @@ main .container .page-content {
   -webkit-transform-origin: top left;
           transform-origin: top left;
   white-space: nowrap;
-  max-height: 100vh;
+  max-height: 70vh;
   height: 100%;
   width: 100vh;
   left: 50%;
@@ -224,8 +224,7 @@ footer .navbar {
   position: absolute;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  top: 50%;
-  bottom: 0;
+  bottom: 50%;
   left: 0;
   -webkit-transform: translate(0, -50%);
           transform: translate(0, -50%);
