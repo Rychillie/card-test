@@ -49,10 +49,10 @@ main {
   display: inline-block;
   max-height: 100vh;
   min-height: 480px;
-  bottom: 0;
+  transform: translateY(-50%);
   right: 0;
   left: 0;
-  top: 0;
+  top: 50%;
 
   .container {
     display: block;
