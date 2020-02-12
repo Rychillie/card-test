@@ -21,7 +21,7 @@ header {
   height: 100%;
   display: inline-block;
   position: relative;
-  max-height: 10vh;
+  max-height: 15vh;
 }
 
 header h1 {
