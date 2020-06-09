@@ -58,7 +58,6 @@ main {
 main .container {
   display: block;
   overflow-y: scroll;
-  overflow-x: hidden;
   -webkit-transform: rotate(270deg) translateX(-50%);
           transform: rotate(270deg) translateX(-50%);
   -webkit-transform-origin: top left;
